@@ -5,7 +5,7 @@ export default function Recipe({ title, image, ingredients }) {
     <div className="recipe">
       <h1>{title}</h1>
       <img src={image} alt="recipes" />
-      <ul style={{listStyle:'none'}}>
+      <ul style={{ listStyle: "none" }}>
         {ingredients.map((element) => (
           <li>- {element.text}</li>
         ))}
